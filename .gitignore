@@ -6,3 +6,17 @@ chroma-db/index/*.log
 __pycache__/
 *.pyc
 chroma-db/index/*.log
+chroma-db/
+.venv/
+__pycache__/
+*.pt
+*.bin
+*.onnx
+*.pickle
+*.pkl
+*.zip
+*.tar
+*.tar.gz
+*.7z
+*.gz
+
