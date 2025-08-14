@@ -3,9 +3,14 @@
 # - Optional GPT planner + GPT answer if OPENAI_API_KEY is set
 # - Added: robust fallbacks + synonym boost for value queries (e.g., "Access to information")
 
+import sys
+import pysqlite3
+sys.modules['sqlite3'] = pysqlite3
+
 import os, io, csv, time, json, re, unicodedata
 import pandas as pd
 import streamlit as st
+
 import chromadb
 from chromadb.config import Settings
 from sentence_transformers import SentenceTransformer
