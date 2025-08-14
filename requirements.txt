@@ -2,6 +2,15 @@
 --extra-index-url https://download.pytorch.org/whl/cpu
 
 streamlit==1.48.0
+# requirements-min.txt
+--extra-index-url https://download.pytorch.org/whl/cpu
+
+pysqlite3-binary        # <<< add this line (MUST come before chromadb)
+streamlit==1.48.0
+pandas==2.3.1
+chromadb==1.0.16
+sentence-transformers==5.1.0
+# openai==1.99.6        # include only if you use GPT synthesis
 pandas==2.3.1
 chromadb==1.0.16
 sentence-transformers==5.1.0
