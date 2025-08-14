@@ -2,6 +2,10 @@
 # - Embeds Title/Short/FullText PLUS human-readable metadata tags (fixes generic queries like "Access to information")
 # - Flat metadata only (Chroma requirement)
 # - Force-unique IDs (include row index)
+import sys
+import pysqlite3
+sys.modules['sqlite3'] = pysqlite3
+
 import os
 import pandas as pd
 import chromadb
